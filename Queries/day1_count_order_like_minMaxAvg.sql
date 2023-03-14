@@ -50,8 +50,29 @@ select *
 from EMPLOYEES
 where  FIRST_NAME like '__z__';
 
+-- get me first name where second char is u;
+
+select * from EMPLOYEES
+where FIRST_NAME like '_u%';
 
 
+-- find me minimum salary
+
+select min(SALARY) from EMPLOYEES;
+
+-- find me maximum salary
+
+select max(SALARY) from EMPLOYEES;
+
+-- find me av salary
+
+select avg(SALARY) from EMPLOYEES;
+
+-- round
+
+select round(avg(SALARY),2) from EMPLOYEES;
+
+select sum(SALARY) from EMPLOYEES;
 
 
 

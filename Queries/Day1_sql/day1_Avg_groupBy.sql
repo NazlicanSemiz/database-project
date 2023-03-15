@@ -25,7 +25,7 @@ group by JOB_ID;
 
 -- get me jobs_id where their avg salary is more than 5k
 
-select JOB_ID, avg(SALARY),count(*)
+select JOB_ID, avg(SALARY),count(*), sum(SALARY)
 from EMPLOYEES
 group by JOB_ID
 having avg(SALARY) >5000;
